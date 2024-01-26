@@ -1,71 +1,49 @@
 import { Box, Typography } from '@mui/material';
-import ServiciosCard from './ServiciosCard';
-import { serviciosData } from './serviciosData';
 
-const Servicios = () => {
+const ServiciosCard = ({ imagePath, serviceName }) => {
+  const cardStyles = {
+    width: '166px',
+    height: '211px',
+    padding: '16px',
+    borderRadius: '20px',
+    boxShadow: [
+      '0px 2.77px 2.21px 0px #AE967205',
+      '0px 6.65px 5.32px 0px #AE967207',
+      '0px 12.52px 10.02px 0px #AE967209',
+      '0px 22.34px 17.87px 0px #AE96720B',
+      '0px 41.78px 33.42px 0px #AE96720D',
+      '0px 100px 80px 0px #AE967212',
+    ].join(','),
+    gap: '16px',
+    background: '#FFFFFF',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  };
+
+  const imageStyles = {
+    width: '134px',
+    height: '134px',
+    borderRadius: '50%',
+  };
+
+  const serviceNameStyles = {
+    width: '62px',
+    height: '29px',
+    fontSize: '20px',
+    fontWeight: 500,
+    lineHeight: '29px',
+    letterSpacing: '0em',
+    textAlign: 'left',
+    color: '#000000',
+  };
+
   return (
-    <Box
-      sx={{
-        width: '877px',
-        height: '506px',
-        gap: '24px',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-      }}
-    >
-      {/* Título de Servicios */}
-      <Typography
-        variant="h5"
-        component="div"
-        sx={{
-          width: '100px',
-          height: '36px',
-          fontFamily: 'Jost',
-          fontSize: '25px',
-          fontWeight: 500,
-          lineHeight: '36px',
-          letterSpacing: '0em',
-          textAlign: 'left',
-          color: '#000000',
-          marginLeft: '-12px',  // Ajustar según sea necesario
-        }}
-      >
-        Servicios
-      </Typography>
-
-      {/* Contenido de las tarjetas de servicios */}
-      <Box
-        sx={{
-          display: 'flex',
-          gap: '40px',
-          justifyContent: 'center',
-        }}
-      >
-        {/* Columna 1 */}
-        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          {serviciosData.slice(0, 4).map((servicio, index) => (
-            <ServiciosCard
-              key={index}
-              imagePath={servicio.image}
-              serviceName={servicio.name}
-            />
-          ))}
-        </Box>
-
-        {/* Columna 2 */}
-        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          {serviciosData.slice(4, 8).map((servicio, index) => (
-            <ServiciosCard
-              key={index}
-              imagePath={servicio.image}
-              serviceName={servicio.name}
-            />
-          ))}
-        </Box>
-      </Box>
+    <Box sx={cardStyles}>
+      <img src={imagePath} alt={serviceName} style={imageStyles} />
+      <Typography sx={serviceNameStyles}>{serviceName}</Typography>
     </Box>
   );
 };
 
-export default Servicios;
+export default ServiciosCard;

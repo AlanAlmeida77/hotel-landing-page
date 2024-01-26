@@ -7,6 +7,7 @@ import PostresContainer from './components/carrousel/postres/PostresContainer';
 import BebidasContainer from './components/carrousel/bebidas/BebidasContainer';
 import Habitaciones from './components/habitaciones/Habitaciones';
 import Eventos from './components/eventos/Eventos';
+import Servicios from './components/servicios/Servicios';
 
 
 const theme = createTheme({
@@ -28,6 +29,7 @@ function App() {
       <BebidasContainer />
       <Habitaciones />
       <Eventos />
+      <Servicios />
       {/* Contenido adicional de la página principal */}
     </ThemeProvider>
   );

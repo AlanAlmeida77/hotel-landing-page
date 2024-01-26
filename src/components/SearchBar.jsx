@@ -1,4 +1,5 @@
 
+
 import { Box, Typography, InputBase } from "@mui/material";
 
 const SearchBar = () => {
@@ -16,10 +17,9 @@ const SearchBar = () => {
   const hotelNameStyles = {
     width: "100%",
     height: "69px",
-    marginTop: "15px",
+    marginTop: "35px",
     textAlign: "center",
-    fontFamily: "Mosk",
-    fontSize: "32px", 
+    fontSize: "45px",
     fontWeight: 900,
     lineHeight: "1.2", 
     letterSpacing: "0em",
@@ -28,11 +28,11 @@ const SearchBar = () => {
 
   const searchBarStyles = {
     width: "100%", 
-    maxWidth: "250px",
-    height: "50px",
+    maxWidth: "350px",
+    height: "35px",
     backgroundColor: "#FFFFFF",
+    marginTop: "25px",
     borderRadius: "10px",
-    fontFamily: "Mosk",
     fontSize: "16px",
     fontWeight: 500,
     lineHeight: "1.5", 

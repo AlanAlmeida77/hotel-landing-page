@@ -1,7 +1,8 @@
 
 import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
 import Nav from './components/Nav';
-import CarrouselContainer from './components/carrousel/FoodCarrouselContainer';
+import CarrouselContainer from './components/carrousel/food/FoodCarrouselContainer';
+import DesCenaContainer from './components/carrousel/des_cenas/DesCenaContainer';
 
 const theme = createTheme({
   palette: {
@@ -17,6 +18,7 @@ function App() {
       <CssBaseline />
       <Nav />
       <CarrouselContainer />
+      <DesCenaContainer />
       {/* Contenido adicional de la página principal */}
     </ThemeProvider>
   );

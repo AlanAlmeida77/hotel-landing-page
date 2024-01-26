@@ -1,6 +1,8 @@
+// Servicios.jsx
+
 import { Box, Typography } from '@mui/material';
-import ServiciosCard from './ServiciosCard';  // Ajusta la ruta según sea necesario
-import { serviciosData } from './serviciosData';  // Ajusta la ruta según sea necesario
+import ServiciosCard from './ServiciosCard';
+import { serviciosData } from './serviciosData';
 
 const Servicios = () => {
   return (
@@ -38,10 +40,10 @@ const Servicios = () => {
       <Box
         sx={{
           display: 'flex',
-          gap: '40px',
+          flexWrap: 'wrap', // Agregar flexWrap para que las tarjetas se muevan a la siguiente línea
+          justifyContent: 'center',
         }}
       >
-        {/* Renderiza las tarjetas según la data */}
         {serviciosData.map((servicio, index) => (
           <ServiciosCard
             key={index}
@@ -55,3 +57,4 @@ const Servicios = () => {
 };
 
 export default Servicios;
+

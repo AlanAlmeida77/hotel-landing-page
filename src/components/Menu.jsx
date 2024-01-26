@@ -12,7 +12,6 @@ const Menu = () => {
   };
 
   const logoStyles = {
-    fontFamily: 'Mosk',
     fontSize: '24px',
     fontWeight: 700,
     lineHeight: '45px',
@@ -26,13 +25,12 @@ const Menu = () => {
   };
 
   const menuOptionStyles = {
-    fontFamily: 'Mosk',
     fontSize: '18px',
     fontWeight: 600,
     lineHeight: '20px',
     letterSpacing: '0em',
     textAlign: 'left',
-    color: '#333333',
+    color: '#FFFFFF',
     textDecoration: 'none',
     transition: 'color 0.3s ease-in-out',
   };

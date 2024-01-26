@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import EventosCard from './EventosCard';
-import { eventos } from './eventos.js';
+import { eventos } from './eventosData.js';
 
 const Eventos = () => {
   return (

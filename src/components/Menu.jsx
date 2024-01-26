@@ -12,7 +12,7 @@ const Menu = () => {
   };
 
   const logoStyles = {
-    fontFamily: 'Monk',
+    fontFamily: 'Mosk',
     fontSize: '24px',
     fontWeight: 700,
     lineHeight: '45px',

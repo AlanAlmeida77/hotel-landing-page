@@ -1,12 +1,10 @@
-// FoodCard.jsx
-
 import { Box, Typography } from '@mui/material';
 
 const FoodCard = ({ image, name, price }) => {
   const cardStyles = {
-    width: '80%', // Utiliza porcentajes para mejorar la responsividad
+    width: '80%',
     maxWidth: '210px',
-    height: 'auto', // Ajusta automáticamente la altura según el contenido
+    height: 'auto', 
     padding: '16px',
     borderRadius: '20px',
     backgroundColor: '#FFFFFF',
@@ -24,19 +22,19 @@ const FoodCard = ({ image, name, price }) => {
   };
 
   const imageStyles = {
-    width: '100%', // Utiliza el 100% del contenedor
-    height: 'auto', // Ajusta automáticamente la altura según el contenido
+    width: '100%',
+    height: 'auto',
     borderRadius: '10px',
     marginBottom: '8px',
   };
 
   const nameStyles = {
     width: '100%',
-    height: 'auto', // Ajusta automáticamente la altura según el contenido
+    height: 'auto',
     fontFamily: 'Inter',
-    fontSize: '14px', // Ajusta el tamaño de fuente para pantallas más pequeñas
+    fontSize: '14px',
     fontWeight: 600,
-    lineHeight: '16px', // Ajusta la altura de línea
+    lineHeight: '16px',
     letterSpacing: '0em',
     textAlign: 'center',
     marginBottom: '8px',
@@ -44,11 +42,11 @@ const FoodCard = ({ image, name, price }) => {
 
   const priceStyles = {
     width: '100%',
-    height: 'auto', // Ajusta automáticamente la altura según el contenido
+    height: 'auto', 
     fontFamily: 'Inter',
-    fontSize: '12px', // Ajusta el tamaño de fuente para pantallas más pequeñas
+    fontSize: '12px',
     fontWeight: 400,
-    lineHeight: '14px', // Ajusta la altura de línea
+    lineHeight: '14px',
     letterSpacing: '0em',
     textAlign: 'center',
   };

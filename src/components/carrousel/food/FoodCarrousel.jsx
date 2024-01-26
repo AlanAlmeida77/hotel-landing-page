@@ -1,5 +1,3 @@
-// FoodCarrousel.jsx
-
 import { Box, IconButton } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
@@ -24,7 +22,7 @@ const cardsData = [
 ];
 
 const FoodCarrousel = () => {
-  const cardWidth = '80%'; // Puedes ajustar esto según tus necesidades
+  const cardWidth = '80%';
 
   return (
     <Box
@@ -33,14 +31,14 @@ const FoodCarrousel = () => {
         overflow: 'hidden',
       }}
     >
-      {/* Flecha izquierda */}
+
       <IconButton onClick={() => {}}><ArrowBackIcon /></IconButton>
 
       {/* Contenedor de las tarjetas */}
       <Box
         sx={{
           display: 'flex',
-          gap: '16px', // Ajusta el espacio entre las tarjetas
+          gap: '16px',
         }}
       >
         {cardsData.map((card, index) => (

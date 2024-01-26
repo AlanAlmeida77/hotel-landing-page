@@ -8,6 +8,7 @@ import BebidasContainer from './components/carrousel/bebidas/BebidasContainer';
 import Habitaciones from './components/habitaciones/Habitaciones';
 import Eventos from './components/eventos/Eventos';
 import Servicios from './components/servicios/Servicios';
+import Experiencia from './components/Experiencia';
 
 
 
@@ -31,6 +32,7 @@ function App() {
       <Habitaciones />
       <Eventos />
       <Servicios />
+      <Experiencia />
       {/* Contenido adicional de la página principal */}
     </ThemeProvider>
   );

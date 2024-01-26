@@ -10,10 +10,12 @@ const Servicios = () => {
       sx={{
         width: '877px',
         height: '506px',
+        marginTop: '30px',
         gap: '24px',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        marginLeft: '250px',
       }}
     >
       {/* Título de Servicios */}
@@ -23,14 +25,13 @@ const Servicios = () => {
         sx={{
           width: '100px',
           height: '36px',
-          fontFamily: 'Jost',
           fontSize: '25px',
-          fontWeight: 500,
+          fontWeight: 800,
           lineHeight: '36px',
           letterSpacing: '0em',
           textAlign: 'left',
           color: '#000000',
-          marginLeft: '-12px',  // Ajustar según sea necesario
+          marginLeft: '-650px', 
         }}
       >
         Servicios
@@ -40,8 +41,9 @@ const Servicios = () => {
       <Box
         sx={{
           display: 'flex',
-          flexWrap: 'wrap', // Agregar flexWrap para que las tarjetas se muevan a la siguiente línea
+          flexWrap: 'wrap', 
           justifyContent: 'center',
+          gap: '24px',
         }}
       >
         {serviciosData.map((servicio, index) => (
@@ -57,4 +59,5 @@ const Servicios = () => {
 };
 
 export default Servicios;
+
 
